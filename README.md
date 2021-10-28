@@ -1,4 +1,4 @@
-# Spring Boot, Vue3 and Bootstrap-vue-3 Hello World Example on Heroku
+An example project with Vue3, Spring Boot, bootstrap-vue-3 on Heroku
 
 ## Development
 
@@ -12,11 +12,13 @@ When you run `mvn clean package` the frontend Vue application will build in the 
 The Maven plugin `maven-resources-plugin` will copy the contents of the build directory into `/target/static/classes`
 
 ## Deploying on Heroku
-#### Details:https://devcenter.heroku.com/articles/deploying-executable-jar-files
-
->heroku deploy:jar  .\target\springboot-vuejs-example-0.0.1-SNAPSHOT.jar --app vuejs-springboot
-
 https://vuejs-springboot.herokuapp.com
 
+```bash
+heroku deploy:jar  .\target\springboot-vuejs-example-0.0.1-SNAPSHOT.jar --app vuejs-springboot
+```
+#### Details:https://devcenter.heroku.com/articles/deploying-executable-jar-files
 #### Logs
+```bash
 >heroku logs --tail --app vuejs-springboot
+```
