@@ -28,7 +28,7 @@ export default {
       this.msg = this.msg
           .split('')
           .reverse()
-          .join('')
+          .join('');
     }
   }
 }

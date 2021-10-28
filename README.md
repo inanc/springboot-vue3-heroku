@@ -14,7 +14,7 @@ free dyno, so it may take some time before it responds.
 When you run `mvn clean package` the frontend Vue application will build in the `dist` directory.
 The Maven plugin `maven-resources-plugin` will copy the contents of the build directory into `/target/static/classes`
 
-## Deploying Jar File to Heroku
+## Deploying to Heroku
 
 ```bash
 heroku deploy:jar  .\target\springboot-vue3-heroku-0.0.1-SNAPSHOT.jar --app vuejs-springboot
@@ -24,5 +24,3 @@ heroku deploy:jar  .\target\springboot-vue3-heroku-0.0.1-SNAPSHOT.jar --app vuej
 ```bash
 >heroku logs --tail --app vuejs-springboot
 ```
-#### Or you can use this too
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
