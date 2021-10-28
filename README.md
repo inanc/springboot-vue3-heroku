@@ -1,7 +1,7 @@
-An example project with Vue3, Spring Boot, bootstrap-vue-3 on Heroku
+An example project with Spring Boot, Vue3, bootstrap-vue-3 on Heroku
 
-You can test the application https://vuejs-springboot.herokuapp.com Note that it is only running on a
-free dyno, so it may take some time before it responds.
+You can test the application https://vuejs-springboot.herokuapp.com 
+Note that it is only running on a free dyno, so it may take some time before it responds.
 
 ## Development
 
@@ -19,8 +19,8 @@ The Maven plugin `maven-resources-plugin` will copy the contents of the build di
 ```bash
 heroku deploy:jar  .\target\springboot-vue3-heroku-0.0.1-SNAPSHOT.jar --app vuejs-springboot
 ```
-#### Details:https://devcenter.heroku.com/articles/deploying-executable-jar-files
+#### Details: https://devcenter.heroku.com/articles/deploying-executable-jar-files
 #### Logs
 ```bash
->heroku logs --tail --app vuejs-springboot
+heroku logs --tail --app vuejs-springboot
 ```
