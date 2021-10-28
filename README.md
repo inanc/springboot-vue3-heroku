@@ -1,5 +1,8 @@
 An example project with Vue3, Spring Boot, bootstrap-vue-3 on Heroku
 
+You can test the application https://vuejs-springboot.herokuapp.com Note that it is only running on a
+free dyno, so it may take some time before it responds.
+
 ## Development
 
 - Run the Spring Boot application which will run on port 8080
@@ -11,14 +14,15 @@ An example project with Vue3, Spring Boot, bootstrap-vue-3 on Heroku
 When you run `mvn clean package` the frontend Vue application will build in the `dist` directory.
 The Maven plugin `maven-resources-plugin` will copy the contents of the build directory into `/target/static/classes`
 
-## Deploying on Heroku
-https://vuejs-springboot.herokuapp.com
+## Deploying Jar File to Heroku
 
 ```bash
-heroku deploy:jar  .\target\springboot-vuejs-example-0.0.1-SNAPSHOT.jar --app vuejs-springboot
+heroku deploy:jar  .\target\springboot-vue3-heroku-0.0.1-SNAPSHOT.jar --app vuejs-springboot
 ```
 #### Details:https://devcenter.heroku.com/articles/deploying-executable-jar-files
 #### Logs
 ```bash
 >heroku logs --tail --app vuejs-springboot
 ```
+#### Or you can use this too
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
